@@ -5,6 +5,8 @@
 팀프로젝트   
 - 금호리조트 홈페이지 리뉴얼   
 https://www.kumhoresort.co.kr/condo/   
+- 피그마 설계
+[LINK](https://www.figma.com/file/Fn0fkZ3Z9uxEElKj5tfd4J/suuhyeon?node-id=0%3A1)
 
 - 팀원 (가나다 순)   
 박수현   
