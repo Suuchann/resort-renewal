@@ -1,13 +1,20 @@
 let i = 1;
 $(function(){
     popup();
-    menu();
-    setInterval(carousel, 4000);
     sidemenu();
     tab();
     //
     slide();
     slide2();
+    //
+    if($(window).width() < 481) {
+        setInterval(mobileCarousel, 4000);
+        mobileMenu();
+        menuList();
+    } else {
+        setInterval(carousel, 4000);
+        menu();
+    }
 })
 function popup(){
     $("#popup button").click(function(){
@@ -31,6 +38,15 @@ function menu(){
 function carousel(){
     if(i >= 3) i = 0;
     let xPos = -1440 * i;
+    $(".img-wrap").animate({
+        marginLeft: xPos,
+    });
+    i++;
+};
+function mobileCarousel() {
+    let mobileWidth = $(window).width();
+    if(i >= 3) i = 0;
+    let xPos = -mobileWidth * i;
     $(".img-wrap").animate({
         marginLeft: xPos,
     });
@@ -72,7 +88,7 @@ function slide(){
         prevItem.addClass("top")
 
     })
-}
+};
 function slide2(){
     $(".right2").on('click',function(){
         let currItem = $("#items2 li.top")
@@ -90,5 +106,25 @@ function slide2(){
         prevItem.addClass("top")
 
     })
-}
-
+};
+function mobileMenu(){
+    $(".burger").click(function(){
+        $(this).hide()
+        $(".header-wrap").show()
+        $(".close").show()
+    })
+    // $("#gnb > li").click(function(){
+    //     $("#gnb > lnb").show()
+    // })
+    $(".close").click(function(){
+        $(".header-wrap").hide()
+        $(".burger").show()
+        $(".close").hide()
+    })
+};
+function menuList(){
+    $(".menutab").off('click').on('click', function(e){
+        e.stopPropagation();
+        $(this).find(".lnb").stop().slideToggle();
+    })
+};
