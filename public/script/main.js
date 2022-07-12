@@ -10,7 +10,7 @@ $(function(){
     if($(window).width() < 481) {
         setInterval(mobileCarousel, 4000);
         mobileMenu();
-        // menuList();
+        menuList();
     } else {
         setInterval(carousel, 4000);
         menu();

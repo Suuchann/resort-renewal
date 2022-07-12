@@ -587,8 +587,9 @@ address p {
         z-index: inherit;
     }
     #gnb > li {
-        width: 80%;
-        height: 3rem;
+        width: 90%;
+        height: auto;
+        padding: 1.5rem 1rem;
         box-sizing: border-box;
         margin: 0 auto;
         position: relative;
@@ -596,7 +597,7 @@ address p {
     }
     .menutab {
         width: 90%;
-        height: 100%;
+        /* height: 100%; */
         box-sizing: border-box;
         position: relative;
     }
@@ -610,24 +611,25 @@ address p {
     }
     #gnb > li > p {
         display: block;
-        height: 3rem;
+        height: 0;
         text-align: left;
-        line-height: 3rem;
+        line-height: 0;
     }
     .lnb {
         display: none;
         position: relative;
-        z-index: none;
         color: #333333;
         width: 100%;
-        height: 100%;
+        height: auto;
         box-sizing: border-box;
-        background: red;
+        /* background: red; */
+        margin: 2rem 0 0 0;
     }
     .lnb li {
         width: 100%;
-        height: 3rem;
+        /* height: 3rem; */
         position: relative;
+        padding: 0.5rem 0;
     }
     .lnb li a {
         height: inherit;
