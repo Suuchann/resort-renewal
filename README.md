@@ -22,4 +22,4 @@ healing: 최희지
 trip: 최희지   
 waterpark: 최희지   
 
-[LINK](https://suuchann.github.io/resort-renewal/public/)
+[사이트 보기](https://suuchann.github.io/resort-renewal/public/)
